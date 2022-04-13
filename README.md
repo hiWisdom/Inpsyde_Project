@@ -31,11 +31,6 @@ e.g.
 
 An answer to that question.
 
-= What about the social media links url ? = working on it.
-
-= Can Image be selected directly from image section and not inspector control panel? = working on it.
-
-= What about the selection of a Person by their name and inserted into the "post_content" of the postType "page ? = working on it.
 
 
 == Screenshots ==
