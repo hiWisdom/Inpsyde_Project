@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/cpo-block",
+	"version": "0.1.0",
+	"title": "Cpo Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Plugin activate a Custom Gutenberg Block for Company Staffs Overview in the Custom Gutenberg post type section..",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "cpo-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
