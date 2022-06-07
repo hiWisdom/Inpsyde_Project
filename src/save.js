@@ -39,7 +39,6 @@ export default function save({ attributes}) {
 
 	
       // Save content Body Begins 
-      <div className="body">
               
 
 
@@ -114,15 +113,6 @@ export default function save({ attributes}) {
 
 
 
-   
-
-
-                
-
-        
-
-
-      </div>
 
                     );
 
