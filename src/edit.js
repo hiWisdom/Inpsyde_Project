@@ -71,12 +71,12 @@ export default function edit({ attributes, setAttributes}) {
 
     
 
-      //border change function
+      //fontsize change function
       function newFontSize(event){
         setAttributes({fontSizes: event});
       }
 
-      //fontsize change function
+      //border change function
       function onChangeBorder(event){
         setAttributes({borderChange: event});
       }
@@ -289,7 +289,7 @@ export default function edit({ attributes, setAttributes}) {
 
 
 
-              <PanelBody title={'Fontsize Settings'}> {/**Panel for Fontsize settings */}
+              <PanelBody title={'Font size Settings'}> {/**Panel for Fontsize settings */}
                   <FontSizePicker
                       // fontSizes={ fontSizes }
                       value={ fontSizes }
@@ -342,7 +342,7 @@ export default function edit({ attributes, setAttributes}) {
        
                 <tr style={ {border: borderChange} }>
              
-                  <td><input type="text" title="Input staff name here" placeholder="Input staff name here" value={attributes.name} onChange={updateName} style={ { color: fontColor, textAlign: alignment, border: borderChange, fontsize: fontSizes} }/></td>
+                  <td><input type="text" title="Input staff name here" placeholder="Input staff name here" value={attributes.name} onChange={updateName} style={ { color: fontColor, textAlign: alignment, border: borderChange} }/></td>
 
                 {/* <td>    THE RICHTEXT IS A GOOD OPTION TO USE FOR INPUT TEXT EDIT
                  <RichText key="editable" tagName="p" placeholder="Input persons name here" value={attributes.name} onChange={updateName} style={ { color: fontColor, textAlign: alignment} }/></td> */}
@@ -352,14 +352,14 @@ export default function edit({ attributes, setAttributes}) {
 
                 <tr style={ {border: borderChange} }>
 
-                  <td><input type="text" title="Input staff position here" placeholder="Input staff position here" value={attributes.position} onChange={updatePosition} style={ { color: fontColor,  textAlign: alignment, border: borderChange, fontsize: fontSizes} }/></td>
+                  <td><input type="text" title="Input staff position here" placeholder="Input staff position here" value={attributes.position} onChange={updatePosition} style={ { color: fontColor,  textAlign: alignment, border: borderChange} }/></td>
                     
                 </tr>
         
 
                 <tr style={ {border: borderChange} }>
                 
-                  <td><textarea cols="18" rows="3" title="Input staff description here" placeholder="Input staff description here" value={attributes.description} onChange={updateDescription} style={ { color: fontColor,  textAlign: alignment, border: borderChange, fontsize: fontSizes} }></textarea></td>
+                  <td><textarea cols="18" rows="3" title="Input staff description here" placeholder="Input staff description here" value={attributes.description} onChange={updateDescription} style={ { color: fontColor,  textAlign: alignment, border: borderChange} }></textarea></td>
 
                 </tr>
          

@@ -92,13 +92,13 @@ function edit(_ref) {
     linkedinlink,
     xinglink,
     facebooklink
-  } = attributes; //border change function
+  } = attributes; //fontsize change function
 
   function newFontSize(event) {
     setAttributes({
       fontSizes: event
     });
-  } //fontsize change function
+  } //border change function
 
 
   function onChangeBorder(event) {
@@ -333,7 +333,7 @@ function edit(_ref) {
     onChange: onChangeBorder,
     value: borderChange
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
-    title: 'Fontsize Settings'
+    title: 'Font size Settings'
   }, " ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.FontSizePicker // fontSizes={ fontSizes }
   , {
     value: fontSizes // fallbackFontSize={ fallbackFontSize }
@@ -365,8 +365,7 @@ function edit(_ref) {
     style: {
       color: fontColor,
       textAlign: alignment,
-      border: borderChange,
-      fontsize: fontSizes
+      border: borderChange
     }
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("tr", {
     style: {
@@ -381,8 +380,7 @@ function edit(_ref) {
     style: {
       color: fontColor,
       textAlign: alignment,
-      border: borderChange,
-      fontsize: fontSizes
+      border: borderChange
     }
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("tr", {
     style: {
@@ -398,8 +396,7 @@ function edit(_ref) {
     style: {
       color: fontColor,
       textAlign: alignment,
-      border: borderChange,
-      fontsize: fontSizes
+      border: borderChange
     }
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("tr", {
     style: {
@@ -673,7 +670,6 @@ function save(_ref) {
   const {
     fontColor,
     alignment,
-    fontSizes,
     borderChange,
     backgroundImage,
     githublink,
