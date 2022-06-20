@@ -5,7 +5,7 @@
 	"title": "Cpo Block",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Plugin activate a Custom Gutenberg Block for Company Staffs Overview in the Custom Gutenberg post type section..",
+	"description": "Example static block scaffolded with Create Block tool.",
 	"supports": {
 		"html": false
 	},

@@ -46,26 +46,39 @@ registerBlockType('create-block/cpo-block', {
     
 		  name:{
 			type:"string",
-			source:"html",
-			selector:"p",
 		  },
 
 			position:{
-			  type:"string",
-			  source:"html",
-			  selector:"p",
+				type:"string",
 			},
 
 			description:{
-			  type:"string",
-			  source:"html",
-			  selector:"p",
+				type:"string",
 			},
 
 			fontColor: {
 			  type: "string",
 			  default: "black"
 			},
+
+			borderChange: {
+				type: "string",
+				default: "black"
+			},
+
+			fontSizes: [
+				{
+					name: __( 'Small' ),
+					slug: 'small',
+					size: 12,
+				},
+				{
+					name: __( 'Big' ),
+					slug: 'big',
+					size: 26,
+				}
+				
+			],
 
 			backgroundImage: {
 			  type: "string",
@@ -84,26 +97,22 @@ registerBlockType('create-block/cpo-block', {
 
 			githublink: {
 				type: "string",
-				source: "attribute",
-				attribute: "href"
+
 			},
 			
 			linkedinlink: {
 				type: "string",
-				source: "attribute",
-				attribute: "href"
+	
 			},
 			
 			xinglink: {
 				type: "string",
-				source: "attribute",
-				attribute: "href"
+		
 			},
 			
 			facebooklink: {
 				type: "string",
-				source: "attribute",
-				attribute: "href"
+	
 			},
 
 			removeText: {

@@ -30,7 +30,7 @@ import {InnerBlocks} from '@wordpress/block-editor';
  
 export default function save({ attributes}) {
 	 
-	 const {fontColor, alignment, backgroundImage, githublink, linkedinlink, xinglink, facebooklink } = attributes;
+	 const {fontColor, alignment, fontSizes, borderChange,  backgroundImage, githublink, linkedinlink, xinglink, facebooklink } = attributes;
 	 
 
 

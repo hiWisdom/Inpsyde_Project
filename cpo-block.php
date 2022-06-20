@@ -5,7 +5,7 @@
  * Requires at least: 5.8
  * Requires PHP:      7.0
  * Version:           0.1.0
- * Author:            <a href="https://hiwisdom.github.io/online.github.io">Orodje Wisdom</a>
+ * Author:            <a href="https://www.inpsyde.com">Inpsyde_</a>
  * License:           GPL-2.0-or-later
  * Text Domain:       cpo-block
  *
@@ -84,5 +84,8 @@ function custom_register_block() {
 
 
 }
+
+
+
 
 add_action( 'init', 'custom_register_block' );

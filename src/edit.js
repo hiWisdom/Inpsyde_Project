@@ -15,7 +15,7 @@ import { __ } from '@wordpress/i18n';
 
 
 import {InspectorControls, ColorPalette, BlockControls, AlignmentToolbar, MediaUpload, URLPopover, InnerBlocks} from '@wordpress/block-editor';
-import {PanelBody, Button } from '@wordpress/components';
+import {PanelBody, Button, __experimentalBorderControl as BorderControl, FontSizePicker  } from '@wordpress/components';
 
 const IMG_BLOCK = [
   ["core/image", {width: "100%", height: "100%", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", align: "none",  title: "Staff Image", href: "none"}]
@@ -64,12 +64,22 @@ export default function edit({ attributes, setAttributes}) {
   
     //define attributes storage in edit.js 
 
-    const {fontColor, alignment, backgroundImage, isVisiblelinkedin, isVisiblegithub, isVisibleXing, isVisibleFacebook,  githublink, linkedinlink, xinglink, facebooklink } = attributes;
+    const {fontColor, alignment, fontSizes, borderChange, backgroundImage, isVisiblelinkedin, isVisiblegithub, isVisibleXing, isVisibleFacebook,  githublink, linkedinlink, xinglink, facebooklink } = attributes;
     
     
    
 
+    
 
+      //border change function
+      function newFontSize(event){
+        setAttributes({fontSizes: event});
+      }
+
+      //fontsize change function
+      function onChangeBorder(event){
+        setAttributes({borderChange: event});
+      }
 
       //color change function
       function onNameColorChange(event){
@@ -247,9 +257,9 @@ export default function edit({ attributes, setAttributes}) {
               {/* ColorPalette */}
               <PanelBody title={'Font Color Settings'}>
               
-              <p><strong>Select A Color</strong></p>
-              <ColorPalette value={fontColor} onChange={onNameColorChange} />
-              
+                <p><strong>Select A Color</strong></p>
+                <ColorPalette value={fontColor} onChange={onNameColorChange} />
+                
               </PanelBody>
 
 
@@ -268,11 +278,30 @@ export default function edit({ attributes, setAttributes}) {
               </PanelBody> 
 
    */}
+              <PanelBody title={'Border Settings'}> {/**Panel for border settings */}
+                  <BorderControl
+                      // colors={ colors }
+                      label={ __( 'Border' ) }
+                      onChange={ onChangeBorder }
+                      value={ borderChange }
+                  />
+              </PanelBody>
 
 
-          </InspectorControls>,
 
-          //inspector control section end
+              <PanelBody title={'Fontsize Settings'}> {/**Panel for Fontsize settings */}
+                  <FontSizePicker
+                      // fontSizes={ fontSizes }
+                      value={ fontSizes }
+                      // fallbackFontSize={ fallbackFontSize }
+                      onChange={newFontSize}
+                      // onChange={ ( newFontSize ) => {
+                      // setFontSize( newFontSize );
+                     
+                  />
+              </PanelBody>
+
+          </InspectorControls>, //inspector control section end
 
      
 
@@ -311,9 +340,9 @@ export default function edit({ attributes, setAttributes}) {
       <table>
 
        
-                <tr>
+                <tr style={ {border: borderChange} }>
              
-                  <td><input type="text" title="Input staff name here" placeholder="Input staff name here" value={attributes.name} onChange={updateName} style={ { color: fontColor, textAlign: alignment} }/></td>
+                  <td><input type="text" title="Input staff name here" placeholder="Input staff name here" value={attributes.name} onChange={updateName} style={ { color: fontColor, textAlign: alignment, border: borderChange, fontsize: fontSizes} }/></td>
 
                 {/* <td>    THE RICHTEXT IS A GOOD OPTION TO USE FOR INPUT TEXT EDIT
                  <RichText key="editable" tagName="p" placeholder="Input persons name here" value={attributes.name} onChange={updateName} style={ { color: fontColor, textAlign: alignment} }/></td> */}
@@ -321,21 +350,21 @@ export default function edit({ attributes, setAttributes}) {
                 </tr>
   
 
-                <tr>
+                <tr style={ {border: borderChange} }>
 
-                  <td><input type="text" title="Input staff position here" placeholder="Input staff position here" value={attributes.position} onChange={updatePosition} style={ { color: fontColor,  textAlign: alignment} }/></td>
+                  <td><input type="text" title="Input staff position here" placeholder="Input staff position here" value={attributes.position} onChange={updatePosition} style={ { color: fontColor,  textAlign: alignment, border: borderChange, fontsize: fontSizes} }/></td>
                     
                 </tr>
         
 
-                <tr>
+                <tr style={ {border: borderChange} }>
                 
-                  <td><textarea cols="18" rows="3" title="Input staff description here" placeholder="Input staff description here" value={attributes.description} onChange={updateDescription} style={ { color: fontColor,  textAlign: alignment} }></textarea></td>
+                  <td><textarea cols="18" rows="3" title="Input staff description here" placeholder="Input staff description here" value={attributes.description} onChange={updateDescription} style={ { color: fontColor,  textAlign: alignment, border: borderChange, fontsize: fontSizes} }></textarea></td>
 
                 </tr>
          
 
-                <tr>
+                <tr style={ {border: borderChange} }>
                 
                   <td>
   
