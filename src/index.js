@@ -29,7 +29,7 @@ registerBlockType('create-block/cpo-block', {
 	
 	
 	//inbuilt attributes start
-    title: 'Company Staff Overview',
+    title: 'Company Staff Overviews',
     
     icon: 'id-alt',
     
@@ -66,19 +66,21 @@ registerBlockType('create-block/cpo-block', {
 				default: "black"
 			},
 
-			fontSizes: [
-				{
-					name: __( 'Small' ),
-					slug: 'small',
-					size: 12,
-				},
-				{
-					name: __( 'Big' ),
-					slug: 'big',
-					size: 26,
-				}
+			// fontSizes: {
 				
-			],
+			// 	Small:{
+			// 		name: __( 'Small' ),
+			// 		slug: 'small',
+			// 		size: 12,
+			// 	},
+				
+			// 	Big: {
+			// 		name: __( 'Big' ),
+			// 		slug: 'big',
+			// 		size: 26,
+			// 	}
+				
+			// },
 
 			backgroundImage: {
 			  type: "string",

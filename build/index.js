@@ -540,7 +540,7 @@ __webpack_require__.r(__webpack_exports__);
 
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('create-block/cpo-block', {
   //inbuilt attributes start
-  title: 'Company Staff Overview',
+  title: 'Company Staff Overviews',
   icon: 'id-alt',
   category: 'widgets',
   description: "this custom widget add company-executives-overview showing their picture, position, description and social links ",
@@ -563,15 +563,18 @@ __webpack_require__.r(__webpack_exports__);
       type: "string",
       default: "black"
     },
-    fontSizes: [{
-      name: __('Small'),
-      slug: 'small',
-      size: 12
-    }, {
-      name: __('Big'),
-      slug: 'big',
-      size: 26
-    }],
+    // fontSizes: {
+    // 	Small:{
+    // 		name: __( 'Small' ),
+    // 		slug: 'small',
+    // 		size: 12,
+    // 	},
+    // 	Big: {
+    // 		name: __( 'Big' ),
+    // 		slug: 'big',
+    // 		size: 26,
+    // 	}
+    // },
     backgroundImage: {
       type: "string",
       default: null

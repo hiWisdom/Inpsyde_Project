@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       Cpo Block
+ * Plugin Name:       Cpo Block Edited
  * Description:       This Plugin activate a Custom Gutenberg Block for Company Staffs Overview in the Custom Gutenberg post type section.
  * Requires at least: 5.8
  * Requires PHP:      7.0
