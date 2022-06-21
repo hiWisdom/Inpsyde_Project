@@ -23,7 +23,7 @@ e.g.
 An answer to that question.
 
 
-🛠 Tech Stack
+🛠 Tech Stack <BR>
 Javascript, JSX, HTML, CSS, SASS, PHP and React.
 
 
