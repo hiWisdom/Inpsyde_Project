@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name:       Cpo Block Edited
+ * Plugin Name:       Company Staff Overview Gutenberg Block Editor
  * Description:       This Plugin activate a Custom Gutenberg Block for Company Staffs Overview in the Custom Gutenberg post type section.
  * Requires at least: 5.8
  * Requires PHP:      7.0
  * Version:           0.1.0
- * Author:            <a href="https://hiwisdom.github.io/online.github.io">wisdom</a>
+ * Author:            <a href="https://hiwisdom.github.io/online.github.io">Wisdom Akpotor</a>
  * License:           GPL-2.0-or-later
  * Text Domain:       cpo-block
  *
@@ -85,3 +85,49 @@ function custom_register_block() {
 
 
 add_action( 'init', 'custom_register_block' );
+
+
+
+
+function company_staff_overview_post_type(){
+
+	$args = array(
+
+		'labels' => array(
+			'name' => 'Company Staff Overview',
+			'singular_name' => 'Company Staffs Overview',
+			'add_new'           => _x('Add New', 'Company Staff Overview'),
+			'add_new_item'      => __('Add New Company Staff Overview'),
+			'edit_item'         => __('Edit Company Staff Overview'),
+			'new_item'          => __('New Company Staff Overview'),
+			'all_items'         => __('All Company Staff Overview'),
+			'view_item'         => __('View Company Staff Overview'),
+			'search_items'      => __('Search Company Staff Overview'),
+			'not_found'         => __('No Company Staff Overview found'),
+			'menu_name'         => __('Company Staff Overview')
+		),
+		'public' => true,
+		'has_archive' => true,
+		'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'author', 'comments', 'trackbacks', 'page-attributes'),
+		'can-export' => true,
+		'show_in_rest' => true,
+		'hierarchical' => true,
+		'menu_icon' => 'dashicons-buddicons-buddypress-logo',
+		'publicly_queryable' => true,
+		'capability_type' => 'post',
+
+	);
+
+
+	register_post_type('Company Staff Overview', $args);
+
+
+}
+
+add_action( 'init', 'company_staff_overview_post_type' );
+
+
+
+
+
+ 
