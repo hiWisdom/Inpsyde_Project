@@ -4,7 +4,7 @@ Tags:              Gutenberg Block, WordPress Block Editor<BR>
 License:           GPL-2.0-or-later
 <BR>
   
-<p style="font-size: 25px">== Description ==</p><BR>
+== Description ==<BR>
 <b>Plugin usage:</b> This Plugin activate a Custom Gutenberg Block Company Staff Overview Widgets for which enables the user to input pictures, name, position, descriptions and social links of different staffs of the company and post to the website for reference purpose..
 <BR>
   
