@@ -20,10 +20,6 @@ e.g.
 4. Go to Plugins => Activate plugin and click on Company Staff Overview Custom Post Type, Create a new Post Type and search for custom block named <b><i>Company Staff Overview</i></b>.
 <BR>
   
-= A question that someone might have =<BR>
-An answer to that question.
-<BR>
-  
 🛠 Tech Stack <BR>
 Javascript, JSX, HTML, CSS, SASS, PHP and React.
 <BR>
