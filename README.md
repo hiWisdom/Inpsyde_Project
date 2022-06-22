@@ -4,8 +4,8 @@ Tags:              Gutenberg Block, WordPress Block Editor<BR>
 License:           GPL-2.0-or-later
 <BR>
   
-== Description ==<BR>
-Plugin usage: This Plugin activate a Custom Gutenberg Block Company Staff Overview Widgets for which enables the user to input pictures, name, position, descriptions and social links of different staffs of the company and post to the website for reference purpose..
+<p style="font-size: 25px">== Description ==</p><BR>
+<b>Plugin usage:</b> This Plugin activate a Custom Gutenberg Block Company Staff Overview Widgets for which enables the user to input pictures, name, position, descriptions and social links of different staffs of the company and post to the website for reference purpose..
 <BR>
   
 Decisions behind implementation : The customer wants a new overview of all persons of their company. A single person contains the following fields First/Lastname ● Short description ● Image of person ● Position in the company (such as CEO, Project Manager, Developer) ● Social Network Links ○ GitHub, ○ LinkedIn, ○ Xing, ○ Facebook.
