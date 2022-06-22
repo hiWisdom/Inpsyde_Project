@@ -1,5 +1,5 @@
 === CPO Block ===<BR>
-Developer:         Orodje Wisdom Akpotor<BR>
+Developer:         Wisdom Akpotor<BR>
 Tags:              Gutenberg Block, WordPress Block Editor<BR>
 License:           GPL-2.0-or-later
 <BR>
@@ -14,8 +14,10 @@ Decisions behind implementation : The customer wants a new overview of all perso
 == Installation == <BR>
 This section describes how to install the plugin and get it working.
 e.g.
-1. Upload the plugin files to the `.../wp-content/plugins/` directory, or install the plugin through the WordPress plugins screen directly.
-2. Activate the plugin through the 'Plugins' screen in WordPress
+1. Download the plugin. 
+2. Unzip the zip folder and load the folder into the directory `.../wp-content/plugins` of your WordPress installation. 
+3. Load WordPress Content Management System Editor on your browser.
+4. Go to Plugins => Activate plugin and click on Company Staff Overview Custom Post Type, Create a new Post Type and search for custom block named <b><i>Company Staff Overview</i></b>.
 <BR>
   
 = A question that someone might have =<BR>
@@ -36,3 +38,6 @@ npm install
   
 Badges<BR>
 MIT License
+  
+Contributing<BR>
+All feedback / bug reports / pull requests are welcome.
