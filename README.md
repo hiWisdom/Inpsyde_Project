@@ -24,16 +24,5 @@ e.g.
 Javascript, JSX, HTML, CSS, SASS, PHP and React.
 <BR>
   
-Start the server<BR>
-npm run start
-<BR>
-  
-Install dependencies<BR>
-npm install
-<BR>
-  
-Badges<BR>
-MIT License
-  
 Contributing<BR>
 All feedback / bug reports / pull requests are welcome.
